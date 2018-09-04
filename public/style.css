@@ -103,3 +103,8 @@ body {
 .clear-cart {
   width: 100%;
 }
+
+.removeFromCart{
+  width:20px;
+  height: 20px;
+}

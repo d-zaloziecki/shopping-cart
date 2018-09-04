@@ -177,7 +177,9 @@
 
   <script id="shoppingList-template" type="text/x-handlebars-template">
     {{#each shopping}}
-    <p>{{name}}: ${{price}}</p>
+    <p data-id="{{id}}" class="shoppingCartItem"><a href="#"><img src="cart.png" class="removeFromCart"></a>
+      {{name}} {{#if duplicate}} ({{dupNum}}) {{/if}}
+      : ${{price}}</p>
     {{/each}}
   </script>
 
